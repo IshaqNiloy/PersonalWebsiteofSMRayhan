@@ -1,0 +1,122 @@
+nav {
+    margin-top: 15px;
+}
+
+.navbar-brand {
+    padding-left: 70px;
+    font-weight: 650;
+    font-family: 'Montserrat';
+    color: #000;
+}
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-nav {
+   padding-right: 70px; 
+}
+
+#active {
+    color: #926402 !important;
+}
+
+.container {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.container-loaded {
+    opacity: 1;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-size: 45px;
+    font-weight: bold;
+}
+h4 {
+    font-weight: 700;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+p {
+    font-family: 'Montserrat';;
+    line-height: 1.8em; 
+}
+
+.work-experience-section, .education-section,
+.volunteering-section, .skills-and-expertise-section {
+    border-bottom: 1px solid #e2e2e2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.circle {
+    font-size: 12px;
+}
+
+.footer {
+    border-top: 1px solid #e2e2e2;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer .row p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+    .footer .row .col-sm-4 {
+        max-width: 25%;
+    }
+}
+
+#right-align-text {
+    text-align: right;
+}
+
+#right-align-text p {
+    margin-right: 20px;
+}
+
+.footer .row span {
+    font-size: 16px;
+}
+
+.footer-social-icons a {
+    font-size: 13px;
+    color: #000;
+}
+
+.footer-social-icons a:nth-child(2) {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
