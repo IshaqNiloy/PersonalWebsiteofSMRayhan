@@ -3,7 +3,6 @@ nav {
 }
 
 .navbar-brand {
-    padding-left: 70px;
     font-weight: 650;
     font-family: 'Montserrat';
     color: #000;
@@ -17,17 +16,65 @@ nav {
    padding-right: 70px; 
 }
 
-h1 {
-    font-size: 100px;
+@media (max-width: 768px) {
+    .vertical-line {
+        display: none;
+    }
 }
+
+@media (min-width: 769px) {
+    .vertical-line {
+        display: inline;
+    }
+}
+
+.container {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.container-loaded {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 100px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+}
+
 h4 {
     font-weight: 700;
 }
 
 #main {
-    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (min-width: 575px) {
+    #main {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 575px) {
+    #main > .col-sm-6:nth-child(1) {
+        margin-top: 20px;
+    }
 }
 
 #hero-img {
@@ -38,28 +85,81 @@ h4 {
 
 p {
     font-family: 'Montserrat';;
-    line-height: 1.8
+    line-height: 1.8;
+    margin: 0px;
 }
 
-.three-circles {
-    margin-top: 45px;
+.know-more-option, .know-less-option {
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden-part {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .three-circles {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .three-circles {
+        margin-top: 45px;
+    }
+}
+
+.three-circles > .row {
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+.three-circles > .row > .col-sm-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.three-circles > .row > .col-sm-4:nth-child(2) {
+    padding: 0px;
 }
 
 .circle-text-1, .circle-text-2, .circle-text-3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
-    height: 160px;
     border-radius: 50%;
     border: 1px solid #000;
 }
 
-.col-sm-4 > .circle-text-1, 
-.circle-text-2, .circle-text-3 > p {
-    text-align: center;
-    font-size: 22px;
+@media (min-width: 768px) {
+    .circle-text-1, .circle-text-2, .circle-text-3 {
+        width: 160px;
+        height: 160px;
+    }
+    .col-sm-4 a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 769px) {
+    .circle-text-1, .circle-text-2, .circle-text-3 {
+        width: 86px;
+        height: 86px;
+    }
+    .col-sm-4 a {
+        font-size: 16px;
+    }
+}
+
+.col-sm-4 a {
+    text-decoration: none;
     font-weight: 700;
+    color: #000;
 }
 
 .circle-text-1 {
@@ -76,8 +176,9 @@ p {
 
 .footer {
     border-top: 1px solid #e2e2e2;
-    padding-top: 50px;
+    margin-top: 50px;
     margin-bottom: 50px;
+    padding-top: 50px;
 }
 
 .footer .row p {

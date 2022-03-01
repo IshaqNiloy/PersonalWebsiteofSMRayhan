@@ -3,10 +3,18 @@ nav {
 }
 
 .navbar-brand {
+    padding-left: ;
     font-weight: 650;
     font-family: 'Montserrat';
     color: #000;
 }
+
+@media (min-width: 1308px) {
+    .navbar-brand {
+        padding-left: 70px;
+    }
+}
+
 .navbar-brand:hover {
     text-decoration: none;
     color: #000;
@@ -35,13 +43,13 @@ h1 {
     font-size: 45px;
     font-weight: bold;
 }
-h4 {
-    font-weight: 700;
+
+h3 {
+    padding-bottom: 15px;
 }
 
-.header {
-    font-size: 18px;
-    font-weight: bolder;
+h4 {
+    font-weight: 700;
 }
 
 p {
@@ -49,11 +57,37 @@ p {
     line-height: 1.8em; 
 }
 
-.work-experience-section, .education-section,
-.volunteering-section, .skills-and-expertise-section {
+.project-section {
     border-bottom: 1px solid #e2e2e2;
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+@media (min-width: 992px) {
+    .col-sm-6 > p, h3 {
+        width: 422px;
+    }
+}
+
+.row {
+    padding: 80px 0px 80px 0px;
+}
+
+.img-rignt-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-rignt-div > img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 575px) {
+    .img-rignt-div {
+        padding-top: 50px;
+    }
 }
 
 .circle {
