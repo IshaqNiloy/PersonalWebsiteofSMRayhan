@@ -30,18 +30,25 @@ nav {
 }
 
 h1 {
+    font-size: 45px;
     padding-top: 10px;
     padding-bottom: 60px;
-    font-size: 27px;
     font-weight: bold;
 }
 
-.col-sm-4 h3 {
-    font-size: 22px;;
+@media (max-width: 575px) {
+    h1 {
+        font-size: 37px;
+    }
+}
+
+h3 {
+    font-weight: 700;
 }
 
 @media (max-width: 575px) {
     .col-sm-4 h3 {
+        font-size: 22px;
         padding: 0px 0px 35px 0px;
         margin: 0px;
     }
@@ -53,8 +60,8 @@ h4 {
 
 .header {
     font-size: 18px;
-    font-weight: bolder;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto';
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -105,8 +112,15 @@ p {
 
 .footer {
     border-top: 1px solid #e2e2e2;
-    padding-top: 50px;
+    padding: 50px 5px 0px 5px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 575px) {
+    .footer {
+        padding: 35px 5px 0px 5px;
+        margin-bottom: 35px;
+    }
 }
 
 .footer .col-sm-4 {
