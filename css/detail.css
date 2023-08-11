@@ -18,10 +18,18 @@ nav {
     font-size: 26px;
 }
 
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .div-blog {
+    padding: 15px;
     max-width: 780px;
     font-size: 20px;
-    margin-bottom: 35px;
+    margin: -25px auto auto;
 }
 .div-blog > p {
     font-family: 'Lusitana', serif;
@@ -144,7 +152,8 @@ nav {
     float: left;
     border-top: 1px solid #e2e2e2;
     padding: 50px 5px 0px 5px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
+    clear: both;
 }
 
 @media (max-width: 575px) {
