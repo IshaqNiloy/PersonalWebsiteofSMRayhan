@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 body {
     height: 100vh;
     margin: 0;
@@ -68,6 +70,7 @@ h1 {
 }
 h4 {
     font-size: 22px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -76,6 +79,7 @@ h4 {
     }
     h4 {
         font-size: 19px;
+        text-align: left;
     }
 }
 
@@ -112,6 +116,14 @@ h4 {
     width: 100%;
     border-radius: 50%;
     filter: grayscale(100%);
+    margin-bottom: 50px;
+}
+
+q { 
+    font-size: 18px;
+    font-style: italic;
+    font-family: serif;
+    font-weight: 600;
 }
 
 p {

@@ -88,7 +88,9 @@ p {
 }
 
 .work-experience-section, .education-section,
-.volunteering-section, .skills-and-expertise-section {
+.volunteering-section, .skills-and-expertise-section,
+.language-section, .professional-training-section, .highlight-section,
+.professional-career-section, .entrepreneurial-endeavour-section { 
     border-bottom: 1px solid #e2e2e2;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -96,14 +98,21 @@ p {
 
 @media (max-width: 575px) {
     .work-experience-section, .education-section,
-    .volunteering-section, .skills-and-expertise-section {
+    .volunteering-section, .skills-and-expertise-section,
+    .language-section, .professional-training-section, .highlight-section,
+    .professional-career-section, .entrepreneurial-endeavour-section   {
         border-bottom: 1px solid #e2e2e2;
         padding: 35px 5px 35px 5px;
     }
 }
 
-.skills-and-expertise-section p {
+.skills-and-expertise-section p, .highlight-section p,
+.professional-career-section p, .entrepreneurial-endeavour-section p {
     margin-bottom: 15px;
+}
+
+#lang-last-child {
+    margin-bottom: 15px !important;
 }
 
 .circle {
